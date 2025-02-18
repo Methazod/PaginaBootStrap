@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="style/custom.css" rel="stylesheet" type="text/css" />
+  <script src="js/script.js"></script>
+
+  <title>Hollow Knight</title>
+</head>
+<body class="sinMargenes">
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" aria-current="page">
+        <img src="img/controller.webp" alt="" width="30" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation" onclick="changeIcon()">
+        <span id="icono" class="bi bi-chevron-down"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
+            aria-expanded="false" style="color: black;">
+              Nuestra seleccion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="hollowKnight.html">Hollow Knight</a></li>
+              <li><a class="dropdown-item" href="marvelSpiderman2.html">Marvel Spiderman 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="upload.html" class="nav-link negro">Sube un juego</a>
+          </li>               
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>    
+  </nav>
+  <hr class="sinMargenesAbajo">
+  <div class="fondo sinPaddingAbajo">
+    <div class="container paddingArriba">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+            <div class="card-body">
+              <h5 class="card-title">Hollow Knight</h5>
+              <p class="card-text">Developers: Team Cherry</p>              
+              <p class="card-text">Duracion: +20 horas</p>
+              <p class="card-text">Plataformas: PlayStation 4, PlayStation 5, Xbox One, 
+                Xbox Series X, Nintendo Switch, PC</p>              
+              <p class="card-text">Requisitos:</p>
+              <div class="card text-center">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link sistema negro active" onclick="requisitos(event, this)" href="">Windows</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link sistema negro" onclick="requisitos(event, this)" href="">MacOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link sistema negro" onclick="requisitos(event, this)" href="">Linux</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">      
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12">
+                      <table id="requisitos" class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Mínimo:</th>
+                            <th scope="col">Recomendado: </th>                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">SO:</th>
+                            <td>Windows 7</td>
+                            <td>Windows 10</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Procesador:</th>
+                            <td>Intel Core 2 Duo E5200</td>
+                            <td>Intel Core i5</td>                            
+                          </tr>
+                          <tr>
+                            <th scope="row">Memoria:</th>
+                            <td>4 GB de RAM</td>
+                            <td>8 GB de RAM</td>                            
+                          </tr>  
+                          <tr>
+                            <th scope="row">Gráficos</th>
+                            <td>GeForce 9800GTX+ (1GB)</td>
+                            <td>GeForce GTX 560</td>                            
+                          </tr>  
+                          <tr>
+                            <th scope="row">DirectX:</th>
+                            <td>Versión 10</td>
+                            <td>Versión 11</td>                            
+                          </tr> 
+                          <tr>
+                            <th scope="row">Almacenamiento:</th>
+                            <td colspan="2">9 GB de espacio disponible</td>                                                                                 
+                          </tr>          
+                        </tbody>
+                      </table>                      
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+            <img src="img/hkCard.jpg" class="img-fluid rounded-start card-img-bottom">
+          </div>
+          <div class="card-footer">
+            <div class="col-md-12 col-sm-12 col-12">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Meristation</th>
+                    <th scope="col">Metacritic</th>
+                    <th scope="col">Hobby Consolas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Puntuación</th>
+                    <td>9.8</td>
+                    <td>9.6</td>
+                    <td>9.9</td>
+                  </tr>          
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

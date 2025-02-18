@@ -1,0 +1,70 @@
+.fondo {
+    position: absolute;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/background.jpg");    
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;    
+    z-index: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.fondoNegro {
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.sinMargenes {
+    margin: 0%;
+}
+
+.sinMargenesAbajo {
+    margin-bottom: 0%;
+}
+
+.sinPadding {
+    padding: 0%;
+}
+
+.sinPaddingAbajo {
+    padding-bottom: 0%;
+}
+
+.paddingArriba {
+    padding-top: 5%;
+}
+
+.negro {
+    color: black;
+}
+
+.blanco {
+    color: white;
+}
+
+.sinVinculo {
+    text-decoration: none; 
+    color: inherit;     
+}
+
+.sinVinculo:hover {
+    color: black;    
+}
+
+.texto {    
+    scale: 0;
+    display: none;    
+}
+
+.card:hover .texto {
+    transition: scale .5s ease 1s, display .5s ease allow-discrete;
+    display: block;
+    scale: 1;
+}
+
+.card-size {
+    width: 70rem;
+}

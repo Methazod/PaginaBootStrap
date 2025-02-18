@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="style/custom.css" rel="stylesheet" type="text/css" />
+  <script src="js/script.js"></script>
+
+  <title>Inicio</title>
+</head>
+<body class="sinMargenes">
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" aria-current="page">
+        <img src="img/controller.webp" alt="" width="30" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation" onclick="changeIcon()">
+        <span id="icono" class="bi bi-chevron-down"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle negro" href="#" role="button" data-bs-toggle="dropdown" 
+            aria-expanded="false">
+              Nuestra seleccion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="hollowKnight.html">Hollow Knight</a></li>
+              <li><a class="dropdown-item" href="marvelSpiderman2.html">Marvel Spiderman 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="upload.html" class="nav-link negro">Sube un juego</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>    
+  </nav>
+  <hr class="sinMargenesAbajo">
+  <div class="fondo sinPaddingAbajo">
+    <div class="container sinPadding">                  
+      <div class="row">
+        <div class="col-md-12">
+          <h1>¿Qué hacemos?</h1>
+          <h5>Somos una página que pondra información sobre videojuegos.</h5>
+          <h5>Desde su infografía hasta las métricas según otras páginas, además, 
+            los usuarios podrán añadir nuevos juegos que no esten en la página</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 d-none d-md-block"></div>
+        <div class="col-md-11 col-sm-12 col-12">
+          <h2>Recientemente añadidos:</h2>
+        </div>
+        <div class="col-md-1 d-none d-md-block"></div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <a class="sinVinculo" href="hollowKnight.html">
+            <div class="card">
+              <h5 class="card-header"><strong>Hollow Knight</strong></h5>
+              <img src="img/hk.jpg" class="card-img-top">
+              <div class="card-body texto">
+                <p class="card-text">
+                  ¡Forja tu propio camino en Hollow Knight! Una aventura épica a través de 
+                  un vasto reino de insectos y héroes que se encuentra en ruinas. 
+                  Explora cavernas tortuosas, combate contra criaturas corrompidas y entabla 
+                  amistad con extraños insectos, todo en un estilo clásico en 2D dibujado a mano.
+                </p>              
+              </div>
+            </div>
+          </a>            
+        </div>
+        <div class="col-md-1 d-none d-md-block"></div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <a class="sinVinculo" href="marvelSpiderman2.html">
+            <div class="card">
+              <h5 class="card-header"><strong>Marvel Spiderman 2</strong></h5>
+              <img src="img/spiderman.jpg" class="card-img-top">
+              <div class="card-body texto">              
+                <p class="card-text">
+                  Los grandes héroes se forjan juntos. 
+                  El increíble poder del simbionte lleva a Peter Parker y Miles Morales a una 
+                  lucha desesperada mientras intentan equilibrar sus vidas, sus amistades y 
+                  su deber de proteger a los demás en un emocionante capítulo de la aclamada 
+                  franquicia Spider-Man.
+                </p>              
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-1 d-none d-md-block"></div>
+      </div>
+    </div>    
+  </div>    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
